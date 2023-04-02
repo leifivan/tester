@@ -2,7 +2,7 @@
 null,
 {"id":1,"expanded":true,"name":"Intro","order":1,"parentId":0,"scrollX":819,"scrollY":448},
 {"id":2,"expanded":true,"name":"Entry","order":30,"parentId":3,"scrollX":811,"scrollY":512},
-{"id":3,"expanded":true,"name":"Map Tester","order":29,"parentId":0,"scrollX":869,"scrollY":600},
+{"id":3,"expanded":false,"name":"Map Tester","order":29,"parentId":0,"scrollX":869,"scrollY":600},
 {"id":4,"expanded":false,"name":"Cafeteria","order":31,"parentId":2,"scrollX":819,"scrollY":448},
 {"id":5,"expanded":true,"name":"Inside Train","order":2,"parentId":1,"scrollX":819,"scrollY":448},
 {"id":6,"expanded":true,"name":"Outside train","order":3,"parentId":1,"scrollX":2978,"scrollY":440},
