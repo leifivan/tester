@@ -4,6 +4,7 @@ var $plugins =
 [
 {"name":"------------------------","status":false,"description":"----------------------------------------------------------------------------------","parameters":{}},
 {"name":"Community_Basic","status":true,"description":"Plugin used to set basic parameters.","parameters":{"cacheLimit":"50","screenWidth":"624","screenHeight":"1104","changeWindowWidthTo":"","changeWindowHeightTo":"","renderingMode":"webgl","alwaysDash":"off"}},
+{"name":"remove_options","status":true,"description":"","parameters":{}},
 {"name":"------------------------","status":false,"description":"----------------------------------------------------------------------------------","parameters":{}},
 {"name":"GALV_CamControl","status":true,"description":"Allows greater control over where the game camera is focused. View HELP for plugin commands.","parameters":{"Tile Size":"48"}},
 {"name":"------------------------","status":false,"description":"----------------------------------------------------------------------------------","parameters":{}},
@@ -13,5 +14,7 @@ var $plugins =
 {"name":"------------------------","status":false,"description":"----------------------------------------------------------------------------------","parameters":{}},
 {"name":"MOG_AnimatedText","status":true,"description":"(v1.3) Apresenta multiplos textos animados.","parameters":{"Letter Space X-Axis":"0","Letter Space Y-Axis":"0"}},
 {"name":"MOG_PictureEffectsMZ","status":true,"description":"(v1.0) O plugin permite animar as imagens.","parameters":{}},
-{"name":"------------------------","status":false,"description":"----------------------------------------------------------------------------------","parameters":{}}
+{"name":"MOG_DestinationPointer","status":true,"description":"(v1.0) Permite customizar a imagem do cursor do destino.","parameters":{"X-Axis Offset":"0","Y-Axis Offset":"0","Smooth Movement":"true","Zoom Animation":"false","Blink Animation":"false","Float Animation":"true","Blend Mode":"0","Rotation Speed":"0","Number of Frames":"1","Animation Speed":"4"}},
+{"name":"------------------------","status":false,"description":"----------------------------------------------------------------------------------","parameters":{}},
+{"name":"YEP_MessageCore","status":true,"description":"v1.19 Adds more features to the Message Window to customized\nthe way your messages appear and functions.","parameters":{"---General---":"","Default Rows":"4","Default Width":"Graphics.boxWidth","Face Indent":"Window_Base._faceWidth + 24","Fast Forward Key":"pagedown","Enable Fast Forward":"true","Word Wrapping":"false","Description Wrap":"false","Word Wrap Space":"false","Tight Wrap":"false","---Font---":"","Font Name":"GameFont","Font Name CH":"SimHei, Heiti TC, sans-serif","Font Name KR":"Dotum, AppleGothic, sans-serif","Font Size":"28","Font Size Change":"12","Font Changed Max":"96","Font Changed Min":"12","Font Outline":"4","Maintain Font":"false","---Name Box---":"","Name Box Buffer X":"-28","Name Box Buffer Y":"0","Name Box Padding":"this.standardPadding() * 4","Name Box Color":"0","Name Box Clear":"false","Name Box Added Text":"\\c[6]","Name Box Auto Close":"false"}}
 ];
