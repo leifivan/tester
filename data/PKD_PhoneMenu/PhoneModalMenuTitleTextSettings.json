@@ -1,0 +1,9 @@
+{
+    "visible": true,
+    "size": { "w": 200, "h": 60 },
+    "alignment": "center",
+    "font": { "face": null, "size": 18, "italic": false },
+    "margins": { "x": 0, "y": 0 },
+    "outline": { "color": "#000", "width": 0.5 },
+    "textColor": "#000"
+}
