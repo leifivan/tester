@@ -9828,7 +9828,7 @@ PKD_SpriteMessageScreen = class PKD_SpriteMessageScreen extends KDCore.Sprite {
     // * Отнимаем немного (под размер кнопок)
     doneButtonH = ImageManager.loadPictureForPhone('btnDone_00').height || 30;
     doneButtonH += this._hSingleMsg * 2;
-    this._visibleMessagesHeight = (PKD_PhoneMenu.Utils.screenSize().h - doneButtonH) - 20;
+    this._visibleMessagesHeight = (PKD_PhoneMenu.Utils.screenSize().h - doneButtonH) - 65;
     this._msgEvId = this.messageData.evId.last();
     this._prepareMode();
   }
@@ -10135,7 +10135,7 @@ PKD_SpriteMessageScreen = class PKD_SpriteMessageScreen extends KDCore.Sprite {
       this._createPlayerChoices();
     }
     this._choiceButtonA.visible = true;
-    this._choiceButtonB.visible = true;
+    // this._choiceButtonB.visible = true; //edit
     this._choiceButtonA.appear(45);
     this._choiceButtonB.appear(45);
     t1 = this._playerChoice.parameters[0][0];
@@ -10147,8 +10147,10 @@ PKD_SpriteMessageScreen = class PKD_SpriteMessageScreen extends KDCore.Sprite {
     }
     if (!String.any(t2)) {
       this._choiceButtonB.disable();
+      this._choiceButtonB.visible = false;//edit
     } else {
       this._choiceButtonB.enable();
+      this._choiceButtonB.visible = true;//edit
     }
     this._choiceTextA.draw(t1);
     this._choiceTextB.draw(t2);
