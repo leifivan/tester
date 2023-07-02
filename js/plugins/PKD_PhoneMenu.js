@@ -7911,9 +7911,9 @@ if (KDCore._requireLoadLibrary === true) {
   _.getMessagesStyleSettings = function() {
     return this.getLoaderParam("messagesStyle", {
       playerMessagePosition: 'right',
-      playerMessageFontSize: 14,
+      playerMessageFontSize: 12,
       playerMessageTextColor: "#00ff00",
-      playerBackRectColor: "rgba(0,0,0,0)",
+      playerBackRectColor: "rgba(0,0,0,0)", //marked
       charMessagePosition: 'left',
       charMessageFontSize: 12,
       charMessageTextColor: "#FFFFFF",
@@ -9828,7 +9828,8 @@ PKD_SpriteMessageScreen = class PKD_SpriteMessageScreen extends KDCore.Sprite {
     // * Отнимаем немного (под размер кнопок)
     doneButtonH = ImageManager.loadPictureForPhone('btnDone_00').height || 30;
     doneButtonH += this._hSingleMsg * 2;
-    this._visibleMessagesHeight = (PKD_PhoneMenu.Utils.screenSize().h - doneButtonH) - 65;
+    // this._visibleMessagesHeight = (PKD_PhoneMenu.Utils.screenSize().h - doneButtonH) - 65; //original
+    this._visibleMessagesHeight = (PKD_PhoneMenu.Utils.screenSize().h - doneButtonH) - 90; //edit
     this._msgEvId = this.messageData.evId.last();
     this._prepareMode();
   }
@@ -10337,9 +10338,10 @@ PKD_SpriteMessageScreen = class PKD_SpriteMessageScreen extends KDCore.Sprite {
     } else {
       msgBackColor = p.charBackRectColor;
       msgBack.bitmap.fillRect(0, 0, w2, this._hSingleMsg, msgBackColor);
+      
     }
     this.msgContents.addChild(msgBack);
-    msgBack.appear(45);
+    msgBack.appear(45); //original
     this._realMessagesHeight += this._hSingleMsg;
     return this._moveMessages();
   };

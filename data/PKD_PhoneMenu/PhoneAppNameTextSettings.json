@@ -2,12 +2,12 @@
     "visible": true,
     "position": {
         "x": 16,
-        "y": 52
+        "y": 32
     },
     "text": {
         "visible": true,
         "size": {
-            "w": 278,
+            "w": 525,
             "h": 20
         },
         "alignment": "center",
@@ -35,9 +35,9 @@
         }
     },
     "rect": {
-        "visible": true,
+        "visible": false,
         "size": {
-            "w": 278,
+            "w": 550,
             "h": 24
         },
         "fillColor": "#00082b",
